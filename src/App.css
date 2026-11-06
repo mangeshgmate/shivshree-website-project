@@ -1,0 +1,44 @@
+/* App.css - Shivshree Environment & Agriculture */
+/* Global layout constraint for the root element */
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* --- Global Responsive Fixes for Shivshree --- */
+
+@media (max-width: 768px) {
+  /* 1. Force all flex containers to stack vertically on mobile */
+  .flex-col-mobile {
+    flex-direction: column !important;
+    gap: 2rem !important;
+  }
+
+  /* 2. Scale down large headings automatically */
+  h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.2 !important;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  /* 3. Ensure images and sliders don't overflow */
+  .container {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    max-width: 100% !important;
+  }
+
+  /* 4. Make buttons full-width on phones for better "tap" targets */
+  .btn-responsive {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  /* 5. Fix for the sliding window container height */
+  .swiper-container-mobile {
+    height: 300px !important;
+  }
+}

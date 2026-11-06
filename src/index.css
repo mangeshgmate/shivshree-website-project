@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: #030f27;
+  scroll-behavior: smooth;
+}
+
+/* Custom button style to match Builderz template */
+.btn-primary {
+  @apply bg-[#FDBE33] text-[#030F27] font-bold py-3 px-8 transition-all hover:bg-[#030F27] hover:text-white uppercase tracking-widest text-sm;
+}
